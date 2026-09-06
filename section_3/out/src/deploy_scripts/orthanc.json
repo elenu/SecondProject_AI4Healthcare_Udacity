@@ -1,0 +1,17 @@
+{
+  "Name": "HIPPOAI",
+  "DicomAet": "HIPPOAI",
+  "DicomPort": 4242,
+  "HttpPort": 8042,
+  "RemoteAccessAllowed": true,
+  "AuthenticationEnabled": false,
+  "ExecuteLuaEnabled": true,
+  "Plugins": ["/usr/local/share/orthanc/plugins"],
+  "DicomWeb": {
+    "Enable": true,
+    "Root": "/dicom-web/"
+  },
+  "DicomModalities": {
+    "hippoai": ["HIPPOAI", "host.docker.internal", 106]
+  }
+}
